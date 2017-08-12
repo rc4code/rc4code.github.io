@@ -28,7 +28,7 @@ google_analytics: UA-104513287-1
 
 #disqus
 disqus:
-    shortname: rc4code
+    shortname: rc4code-github-io
 
 # Build settings
 markdown: kramdown
