@@ -19,7 +19,7 @@ email: rc4code@gmail.com
 description:
   Find the latest updates on rc4code here! Feel free to email us for any suggestions!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://rc4code.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rc4code
 github_username:  rc4code
 
@@ -28,7 +28,7 @@ google_analytics: UA-104513287-1
 
 #disqus
 disqus:
-    shortname: "rc4-code"
+    shortname: rc4-code
 
 # Build settings
 markdown: kramdown
