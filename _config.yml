@@ -21,7 +21,7 @@ description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rc4code.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rc4code
-github_username:  rc4code
+github_username: rc4code
 
 # Google services
 google_analytics: UA-104513287-1
