@@ -37,7 +37,7 @@ plugins:
   - jekyll-feed
 
 # Where are tags and categories displayed
-tag_page: '/blog/tags/'
+tag_page: '/tags/'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
