@@ -20,7 +20,7 @@ description:
   Find the latest updates on rc4code here! Feel free to email us for any suggestions!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://rc4code.github.io # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: rc4code
+twitter_username:
 github_username: rc4code
 
 # Google services
@@ -35,9 +35,6 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-
-# Where are tags and categories displayed
-tag_page: '/tags/'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

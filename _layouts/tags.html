@@ -1,0 +1,27 @@
+---
+layout: page
+---
+
+
+<div id="archives">
+{% for category in site.categories %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div id="#{{ category_name | slugize }}"></div>
+    <p></p>
+
+    <h3 class="category-head"><u>{{ category_name }}</u></h3>
+    <a name="{{ category_name | slugize }}"></a>
+    <ul class="post-list">
+    {% for post in site.categories[category_name] %}
+    <article class="archive-item">
+      <li>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a> - <span class="post-meta">{{ post.date | date: date_format }}</span></h4>
+      </li>
+    </article>
+    {% endfor %}
+    <ul>
+  </div>
+{% endfor %}
+</div>

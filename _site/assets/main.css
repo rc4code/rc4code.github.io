@@ -60,7 +60,8 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 400;
+  color: #3c7676; }
 
 /**
  * Links
@@ -69,7 +70,7 @@ a {
   color: #66b2b2;
   text-decoration: none; }
   a:visited {
-    color: #448787; }
+    color: #55a9a9; }
   a:hover {
     color: #111;
     text-decoration: underline; }
@@ -158,6 +159,7 @@ pre {
   border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
   min-height: 55.95px;
+  background-color: #cce5e5;
   position: relative; }
 
 .site-title {
@@ -178,7 +180,7 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: #828282;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
@@ -287,6 +289,8 @@ pre {
   list-style: none; }
   .post-list > li {
     margin-bottom: 30px; }
+    .post-list > li p {
+      color: #828282; }
 
 .post-meta {
   font-size: 14px;
@@ -327,6 +331,9 @@ pre {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+  .post-content li {
+    margin-left: 0;
+    list-style: none; }
 
 /**
  * Syntax highlighting styles
