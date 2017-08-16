@@ -1,27 +1,58 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<div class="home">
+  {% include head.html %}
 
-  {{ content }}
+  <body>
+    <style type="text/css">
+          html, body {
+              height: 100%;
+              margin: 0;
+          }
 
-  <h1 class="page-heading">Posts</h1>
+          .bg {
+              min-height: 100%;
+              background-color: grey;
+              background-image: url("/assets/images/RC4Code2.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+          }
+    </style>
+    {% include header.html %}
+    <div class="bg"></div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-        <p>{{ post.excerpt }}</p>
-      </li>
-    {% endfor %}
-  </ul>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home">
 
-  <p class="rss-subscribe">subscribe via <a href="{{ "/feed.xml" | relative_url }}">RSS</a> for future posts!</p>
+          {{ content }}
 
-</div>
+          <h1 class="page-heading">Posts</h1>
+
+          <ul class="post-list">
+            {% for post in site.posts %}
+              <li>
+                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+                <h2>
+                  <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                </h2>
+                <p>{{ post.excerpt }}</p>
+              </li>
+            {% endfor %}
+          </ul>
+
+          <p class="rss-subscribe">subscribe via <a href="{{ "/feed.xml" | relative_url }}">RSS</a> for future posts!</p>
+
+        </div>
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
