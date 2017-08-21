@@ -170,7 +170,8 @@ pre {
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
-    color: #424242; }
+    color: #224444;
+    font-weight: 400; }
 
 .site-nav {
   float: right;
@@ -180,7 +181,8 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #2b5454;
+    font-weight: 400;
+    color: #336565;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
@@ -284,7 +286,7 @@ pre {
  */
 .page-content {
   padding: 30px 0;
-  min-height: 500px; }
+  min-height: 600px; }
 
 .page-heading {
   font-size: 20px; }
