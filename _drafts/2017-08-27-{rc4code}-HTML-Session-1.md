@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "{rc4code} HTML Session 1"
-author: Kat Li Yamg
+author: Kat Li Yang
 date:   2017-08-27 22:05:50 +0800
 categories: sessions
 ---
