@@ -9,8 +9,8 @@ This is where all rc4code courses and projects would be listed. If you are inter
   * Introduction to HTML and CSS
 
 ### Projects:
-  * Maintaining [RC4's website][rc4website].
-  * Telegram Bot team (python).
+  * Maintaining [RC4's website][rc4website]
+  * Telegram Bot team (python)
 
 ### Pending Projects:
   * GitHub pages with Jekyll
