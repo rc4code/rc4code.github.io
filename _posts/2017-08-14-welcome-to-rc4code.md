@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to rc4code"
-author: Andrew Lee
+authors: ["Andrew Lee"]
 date:   2017-08-13 00:46:50 +0800
 categories: updates
 ---

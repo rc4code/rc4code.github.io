@@ -1,13 +1,15 @@
 ---
 layout: post
-title:  "{rc4code} HTML Session 1"
-author: Kat Li Yang
+title:  "HTML/CSS Course: Session 1"
+authors: ["Kat Li Yang"]
 date:   2017-08-27 22:05:50 +0800
-categories: sessions
+categories: HTML/CSS courses
 ---
+This session would cover "Introduction to HTML/CSS", "Hello World", "Head, body, title", "Links and Images", "Styles", "Comments", and "Colours".
+
 ## Introduction
 
-HTML - Hypertext Markup Language
+HTML - HyperText Markup Language
 CSS - Cascading Style Sheet
 
 ## Introduction to HTML/CSS
@@ -44,11 +46,11 @@ It would definitely be helpful in your learning if you type out the code yoursel
 
 As you observe from the above code snippet, HTML consists of opening and closing tags that wrap text, informing the web browser, be it Google Chrome, Mozilla Firefox or Microsoft Edge, on the appropriate way to present the information.
 
-For instance, ```<head>``` is an opening tag, and its corresponding closing tag is ```</head>```. Most HTML tags have both an opening and a closing tag, but there are a few exceptions.
+For instance, `<head>` is an opening tag, and its corresponding closing tag is `</head>`. Most HTML tags have both an opening and a closing tag, but there are a few exceptions.
 
 Save the text file with a .html extension and open the file in your browser. You should see that the title in the browser bar is "Hello World!", and the text "Hello World!" appears in the browser window in bold.
 
-## Head, body, title
+## Head, body, & title
 
 Let's now change the HTML as per the code snippet below.
 
@@ -66,13 +68,13 @@ Let's now change the HTML as per the code snippet below.
 
 Observe that the title in the browser bar has changed. In addition, the bold text has also been changed and a new line of text has appeared below the bold text.
 
-The ```<head></head>``` tags in HTML gives the browser information that is not displayed on the page itself.
+The `<head></head>` tags in HTML gives the browser information that is not displayed on the page itself.
 
-The ```<title></title>``` tags tell the browser that the wrapped text is to be displayed in the browser window bar.
+The `<title></title>` tags tell the browser that the wrapped text is to be displayed in the browser window bar.
 
-```<body></body>``` tags are for information that will be displayed on the page itself. Text wrapped within ```<h1></h1>``` tags will be displayed as headers. These header tags, from ```<h1></h1>``` to ```<h6></h6>``` display headers for paragraphs of text. Paragraphs of text are wrapped within ```<p></p>``` tags.
+`<body></body>`tags are for information that will be displayed on the page itself. Text wrapped within `<h1></h1>` tags will be displayed as headers. These header tags, from `<h1></h1>` to `<h6></h6>` display headers for paragraphs of text. Paragraphs of text are wrapped within `<p></p>` tags.
 
-## Links and images
+## Links and Images
 
 Other than text, we can also add some interactivity by including links to other parts of the web page, other web pages or other websites. Moreover, we can also include images.
 ```
@@ -90,13 +92,13 @@ Other than text, we can also add some interactivity by including links to other 
 </html>
 ```
 
-Observe that in the above code snippet, the ```<a></a>``` and ```<img>``` tags have some additional information in the opening tags. These are called attributes and are used to supply additional information. In this case, the ```href``` attribute is used to supply the link URL in the ```<a>``` tag, while the ```src``` attribute is used to supply the image source location in the ```<img>``` tag. Also note that the ```<img>``` tag does not have a corresponding closing tag.
+Observe that in the above code snippet, the `<a></a>` and `<img>` tags have some additional information in the opening tags. These are called attributes and are used to supply additional information. In this case, the `href` attribute is used to supply the link URL in the `<a>` tag, while the `src` attribute is used to supply the image source location in the `<img>` tag. Also note that the `<img>` tag does not have a corresponding closing tag.
 
 ## HTML styles
 
 Now let's try styling our page.
 
-We can control various styling information by supplying the ```style``` attribute to supported tags.
+We can control various styling information by supplying the `style` attribute to supported tags.
 ```
 <html>
 	<head>
@@ -151,7 +153,7 @@ In HTML and CSS, there are different ways to represent colours. We can use words
 ```
 <span style="color:blue">Blue text</span>
 
-Alternatively, colours can be represented using their hexadecimal representations. This representation of colour indicates the amount of red, green and blue that makes up the colours. This can range from ```00``` to ```FF``` which represents 0 to 255 in decimal.
+Alternatively, colours can be represented using their hexadecimal representations. This representation of colour indicates the amount of red, green and blue that makes up the colours. This can range from `00` to `FF` which represents 0 to 255 in decimal.
 ```
 <span style="color:#0000FF">Blue text</span>
 ```

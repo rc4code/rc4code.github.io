@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Visit us @IG Fair!"
-author: Andrew Lee
+title:  "Visit Us @IG Fair!"
+authors: ["Andrew Lee"]
 date:   2017-08-15 17:46:50 +0800
 categories: updates
 ---
