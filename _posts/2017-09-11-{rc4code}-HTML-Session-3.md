@@ -110,6 +110,7 @@ Next, we would add the column styling to the nav-bar. The styling should look so
 }
 ```
 Now, we should have a sidebar in the website!
+
 ***
 
 ### Exercise!
