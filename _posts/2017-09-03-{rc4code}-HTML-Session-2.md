@@ -117,7 +117,7 @@ Honestly, Times New Roman looks pretty outdated, doesn't it? Let us change the f
 Now let's try to change the header font on your own.
 ***
 
-What if we would like our two paragraphs to be in different colors and different fonts? Well, we could use either the ```class``` or the ```id``` attribute and what is known as a CSS selector. 
+What if we would like our two paragraphs to be in different colors and different fonts? Well, we could use either the ```class``` or the ```id``` attribute and what is known as a CSS selector.
 
 We can select a HTML element to stlye using CSS by element, class, id or position.
 
@@ -320,7 +320,7 @@ Notice how the link changes color when our mouse hovers over it. We can also rem
 
 Now that we have learnt the basic HTML and CSS syntax, let's learn how we can actually use this to format our webpage.
 
-The first thing that we need to understand is the CSS box model. In the CSS box model, every element is like a box. There is a margin outside the box, border for the box, padding inside the box, and nested in the padding, we have our content. Because CSS allows us to format any tag, this makes it convenient to position elements around the webpage. 
+The first thing that we need to understand is the CSS box model. In the CSS box model, every element is like a box. There is a margin outside the box, border for the box, padding inside the box, and nested in the padding, we have our content. Because CSS allows us to format any tag, this makes it convenient to position elements around the webpage.
 
 By convention, the ```<div></div>``` tag is used to position boxes in the webpage, while the ```<span></span>``` tag is used to format text. Let's try out the use of the ```<div></div>``` tag.
 
