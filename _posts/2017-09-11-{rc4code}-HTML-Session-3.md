@@ -111,9 +111,11 @@ Next, we would add the column styling to the nav-bar. The styling should look so
 ```
 Now, we should have a sidebar in the website!
 ***
+
 ### Exercise!
 
 Now let's try to make our own website! Try to apply the concepts we have learnt, to make a unique website. If you need inspiration, try to look at the websites online!
+
 ***
 
 
