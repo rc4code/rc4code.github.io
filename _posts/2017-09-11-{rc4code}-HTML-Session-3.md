@@ -26,11 +26,11 @@ Now, try to to make a plain website, with just a simple header ,some long text, 
     <body>
     	<h1>Lorem Ipsum</h1>
         <p id="content">
-					<a href="#footnote">click for footnote</a>			<!-- Link -->
-					[long text here]
-				</p>
-				<br><br>
-				<a name="footnote"></a>
+        	<a href="#footnote">click for footnote</a>	<!-- Link -->
+        	[long text here]
+        </p>
+        <br><br>
+        <a name="footnote"></a>
         <p id="footnote">[insert footnote]</p>
     </body>
 </html>
