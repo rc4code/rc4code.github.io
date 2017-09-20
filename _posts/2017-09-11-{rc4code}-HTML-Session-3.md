@@ -18,7 +18,7 @@ To add to the functions that you can use in the website, we would be covering tw
 
 Now, try to to make a plain website, with just a simple header ,some long text, and a footnote. To get a long text for filler text, you can visit the [lorem ipsum](http://www.lipsum.com) website. Let's add an anchor link. First, we add an anchor to the footnote. Then we add a link to the anchor by doing the following.
 
-```
+```html
 <html>
 	<head>
     	<title>Anchor Links!</title>
@@ -44,7 +44,7 @@ Have you ever seen a website with a column of links beside the content? Or maybe
 
 To make columns, we would be taking advantage of a new CSS attribute, `float`. First, we would need to construct a simple website with two divs inside a div! Give the two divs id *column_1* and *column_2* respectively. In these two divs, add long texts as filler! For the sake of brevity, we would only show the relevant snippets for the codes from this point onwards!
 
-```
+```html
 <div>
 	<div id="column_1">
 		[long text]
@@ -59,12 +59,12 @@ Look at the result of the above code before we proceed. You should see that colu
 
 Next, we would be using `float` attribute to make the columns! Add the snippet below to the `<style>` section in the head!
 
-```
-.column_1 {
+```html
+#column_1 {
       float: left ;
       width: 50% ;
 }
-.column_2 {
+#column_2 {
       float: left ;
       width: 50% ;
 }
@@ -79,7 +79,7 @@ To make a nav-bar, we would be using the anchor links we learnt earlier! Now, cr
 
 The first nav-bar we would make would be the top nav-bar, which is the horizontal nav-bar you see on most websites! To make this, first we would be inserting the link names of the nav bar, and link them to the anchors we have set. Include the below code in your nav-bar div!
 
-```
+```html
 <span>
 	<a href="#[first-section-name]"></a> |
 	<a href="#[second-section-name]"></a> |
@@ -90,7 +90,7 @@ The website we made should now have a nav-bar at the top, although there's no fo
 
 Now, we would proceed to make a side-bar, which is just a vertical nav-bar to the side. To make this, we would first alter the nav-bar div to the following.
 
-```
+```html
 <span>
 	<a href="#[first-section-name]"></a> <br> <!-- br is a line-break tag -->
 	<a href="#[second-section-name]"></a> <br>
@@ -99,7 +99,7 @@ Now, we would proceed to make a side-bar, which is just a vertical nav-bar to th
 ```
 Next, we would add the column styling to the nav-bar. The styling should look something like the snippet below.
 
-```
+```html
 #navbar {
       float: left ;
       width: 20% ;

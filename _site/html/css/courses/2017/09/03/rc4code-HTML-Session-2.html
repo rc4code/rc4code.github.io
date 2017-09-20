@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML/CSS Course: Session 2</title>
+  <meta name="description" content="Now that we have learnt the basic principles behind HTML, let us learn more about CSS.">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/html/css/courses/2017/09/03/rc4code-HTML-Session-2.html">
+  <link rel="alternate" type="application/rss+xml" title="rc4code&#39;s blog" href="/feed.xml">
+
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">rc4code&#39;s blog</a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+            <a class="page-link" href="/tags/">Tags</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/projects/">Projects</a>
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">HTML/CSS Course: Session 2</h1>
+    <p class="post-meta">
+      <time datetime="2017-09-03T16:40:00+08:00" itemprop="datePublished">
+        
+        Sep 3, 2017
+      </time>
+      
+        • 
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name">
+                Kat Li Yang
+                
+              </span>
+            </span>
+            
+      
+        
+        
+        | <a href="/tags/#HTML/CSS">HTML/CSS</a>
+        
+        | <a href="/tags/#courses">courses</a>
+        </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Now that we have learnt the basic principles behind HTML, let us learn more about CSS.</p>
+
+<p>CSS or Cascading Style Sheets, allow you to add style and formatting to web documents. Instead of describing how CSS works, why don’t we use an example to demonstrate this instead?</p>
+
+<p>In a .html document, enter the following code snippet</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+    	<span class="nt">&lt;title&gt;</span>Let's try CSS!<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    	<span class="nt">&lt;h1&gt;</span>CSS is fun!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Very fun indeed!<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>We can use it to style our text.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>Currently the webpage looks quite plain, with just a simple header and some text. Let’s add some color. First, we add the style tag in the header of the document. Then we add some colors to the <code class="highlighter-rouge">&lt;p&gt;&lt;/p&gt;</code> tag by doing the following.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+    	<span class="nt">&lt;title&gt;</span>Let's try CSS!<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;style&gt;</span>
+        	<span class="nt">p</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    	<span class="nt">&lt;h1&gt;</span>CSS is fun!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Very fun indeed!<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>We can use it to style our text.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>Notice that all text enclosed within <code class="highlighter-rouge">&lt;p&gt;&lt;/p&gt;</code> will now appear to be blue.</p>
+
+<hr />
+<h3 id="exercise">Exercise!</h3>
+
+<p>Now, let’s try changing the color of the <code class="highlighter-rouge">&lt;h1&gt;&lt;/h1&gt;</code> to pink on your own.</p>
+
+<p>We can also change the background color and the alignment of the text using CSS.</p>
+
+<hr />
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+    	<span class="nt">&lt;title&gt;</span>Let's try CSS!<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;style&gt;</span>
+        	<span class="nt">body</span> <span class="p">{</span>
+            	<span class="nl">background-color</span><span class="p">:</span> <span class="no">teal</span><span class="p">;</span>
+            <span class="p">}</span>
+        	<span class="nt">p</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">h1</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+                <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    	<span class="nt">&lt;h1&gt;</span>CSS is fun!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Very fun indeed!<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>We can use it to style our text.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>For more CSS options to play around with, you can visit the w3schools website at <a href="https://www.w3schools.com/css/default.asp">https://www.w3schools.com/css/default.asp</a>.</p>
+
+<p>Honestly, Times New Roman looks pretty outdated, doesn’t it? Let us change the font using CSS. First, visit the Google Fonts page at <a href="https://fonts.google.com/">https://fonts.google.com/</a>. Select your favourite font. Click “SELECT THIS FONT”. Select the “@IMPORT” tab and copy the text as follows. The font I have chosen in this case is called “Encode Sans Semi Condensed”.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+    	<span class="nt">&lt;title&gt;</span>Let's try CSS!<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;style&gt;</span>
+        	<span class="k">@import</span> <span class="sx">url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed')</span><span class="p">;</span>
+        	<span class="nt">body</span> <span class="p">{</span>
+            	<span class="nl">background-color</span><span class="p">:</span> <span class="no">teal</span><span class="p">;</span>
+            <span class="p">}</span>
+        	<span class="nt">p</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+                <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Encode Sans Semi Condensed'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">h1</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+                <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    	<span class="nt">&lt;h1&gt;</span>CSS is fun!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Very fun indeed!<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>We can use it to style our text.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<hr />
+<h3 id="exercise-1">Exercise!</h3>
+
+<p>Now let’s try to change the header font on your own.
+***</p>
+
+<p>What if we would like our two paragraphs to be in different colors and different fonts? Well, we could use either the <code class="highlighter-rouge">class</code> or the <code class="highlighter-rouge">id</code> attribute and what is known as a CSS selector.</p>
+
+<p>We can select a HTML element to stlye using CSS by element, class, id or position.</p>
+
+<p>Here’s an example</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+    	<span class="nt">&lt;title&gt;</span>Let's try CSS!<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;style&gt;</span>
+        	<span class="k">@import</span> <span class="sx">url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed')</span><span class="p">;</span>
+        	<span class="nt">body</span> <span class="p">{</span>
+            	<span class="nl">background-color</span><span class="p">:</span> <span class="no">teal</span><span class="p">;</span>
+            <span class="p">}</span>
+        	<span class="nt">p</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+                <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Encode Sans Semi Condensed'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nc">.first-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">h1</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+                <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    	<span class="nt">&lt;h1&gt;</span>CSS is fun!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"first-line"</span><span class="nt">&gt;</span>Very fun indeed!<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>We can use it to style our text.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>In this example, by including a <code class="highlighter-rouge">class</code> attribute for in my <code class="highlighter-rouge">&lt;p&gt;&lt;/p&gt;</code> element, and using the <code class="highlighter-rouge">.</code> selector for <code class="highlighter-rouge">class</code>, I have changed the color of the first paragraph to white.</p>
+
+<p>Now let’s try using the <code class="highlighter-rouge">id</code> attribute and selector instead.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+    	<span class="nt">&lt;title&gt;</span>Let's try CSS!<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;style&gt;</span>
+        	<span class="k">@import</span> <span class="sx">url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed')</span><span class="p">;</span>
+        	<span class="nt">body</span> <span class="p">{</span>
+            	<span class="nl">background-color</span><span class="p">:</span> <span class="no">teal</span><span class="p">;</span>
+            <span class="p">}</span>
+        	<span class="nt">p</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+                <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Encode Sans Semi Condensed'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nc">.first-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nf">#second-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">h1</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+                <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    	<span class="nt">&lt;h1&gt;</span>CSS is fun!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"first-line"</span><span class="nt">&gt;</span>Very fun indeed!<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"second-line"</span><span class="nt">&gt;</span>We can use it to style our text.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>The selector for the <code class="highlighter-rouge">id</code> attribute is <code class="highlighter-rouge">#</code>.</p>
+
+<p>There is also an order of precedence when we style the elements using the selectors. The specificity increases from element, to class, to id. Here’s an example.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+    	<span class="nt">&lt;title&gt;</span>Let's try CSS!<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;style&gt;</span>
+        	<span class="k">@import</span> <span class="sx">url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed')</span><span class="p">;</span>
+        	<span class="nt">body</span> <span class="p">{</span>
+            	<span class="nl">background-color</span><span class="p">:</span> <span class="no">teal</span><span class="p">;</span>
+            <span class="p">}</span>
+        	<span class="nt">p</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+                <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Encode Sans Semi Condensed'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nc">.first-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nf">#first-line-id</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nf">#second-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">h1</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+                <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    	<span class="nt">&lt;h1&gt;</span>CSS is fun!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"first-line"</span> <span class="na">id=</span><span class="s">"first-line-id"</span><span class="nt">&gt;</span>Very fun indeed!<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"second-line"</span><span class="nt">&gt;</span>We can use it to style our text.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>Note how the color of the first line changes to yellow, because the <code class="highlighter-rouge">id</code> selector is more specific than the <code class="highlighter-rouge">class</code> selector.</p>
+
+<p>There are also certain pseudo-classes for <code class="highlighter-rouge">&lt;a&gt;&lt;/a&gt;</code> elements. There are <code class="highlighter-rouge">:link</code>, <code class="highlighter-rouge">:visited</code>, <code class="highlighter-rouge">:hover</code>, <code class="highlighter-rouge">:active</code> and <code class="highlighter-rouge">:focus</code>. Let’s try them out.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+    	<span class="nt">&lt;title&gt;</span>Let's try CSS!<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;style&gt;</span>
+        	<span class="k">@import</span> <span class="sx">url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed')</span><span class="p">;</span>
+        	<span class="nt">body</span> <span class="p">{</span>
+            	<span class="nl">background-color</span><span class="p">:</span> <span class="no">teal</span><span class="p">;</span>
+            <span class="p">}</span>
+        	<span class="nt">p</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+                <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Encode Sans Semi Condensed'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nc">.first-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nf">#first-line-id</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nf">#second-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">h1</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+                <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    	<span class="nt">&lt;h1&gt;</span>CSS is fun!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"first-line"</span> <span class="na">id=</span><span class="s">"first-line-id"</span><span class="nt">&gt;</span>Very fun indeed!<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"second-line"</span><span class="nt">&gt;</span>We can use it to style our text.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://google.com"</span><span class="nt">&gt;</span>Here is a link to Google.<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>Notice how the link changes color when our mouse hovers over it. We can also remove the underline and bold the text when hovered.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+    	<span class="nt">&lt;title&gt;</span>Let's try CSS!<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;style&gt;</span>
+        	<span class="k">@import</span> <span class="sx">url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed')</span><span class="p">;</span>
+        	<span class="nt">body</span> <span class="p">{</span>
+            	<span class="nl">background-color</span><span class="p">:</span> <span class="no">teal</span><span class="p">;</span>
+            <span class="p">}</span>
+        	<span class="nt">p</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+                <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Encode Sans Semi Condensed'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nc">.first-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nf">#first-line-id</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nf">#second-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">h1</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+                <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+                <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+                <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    	<span class="nt">&lt;h1&gt;</span>CSS is fun!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"first-line"</span> <span class="na">id=</span><span class="s">"first-line-id"</span><span class="nt">&gt;</span>Very fun indeed!<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"second-line"</span><span class="nt">&gt;</span>We can use it to style our text.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://google.com"</span><span class="nt">&gt;</span>Here is a link to Google.<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>Now that we have learnt the basic HTML and CSS syntax, let’s learn how we can actually use this to format our webpage.</p>
+
+<p>The first thing that we need to understand is the CSS box model. In the CSS box model, every element is like a box. There is a margin outside the box, border for the box, padding inside the box, and nested in the padding, we have our content. Because CSS allows us to format any tag, this makes it convenient to position elements around the webpage.</p>
+
+<p>By convention, the <code class="highlighter-rouge">&lt;div&gt;&lt;/div&gt;</code> tag is used to position boxes in the webpage, while the <code class="highlighter-rouge">&lt;span&gt;&lt;/span&gt;</code> tag is used to format text. Let’s try out the use of the <code class="highlighter-rouge">&lt;div&gt;&lt;/div&gt;</code> tag.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+    	<span class="nt">&lt;title&gt;</span>Let's try CSS!<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;style&gt;</span>
+        	<span class="k">@import</span> <span class="sx">url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed')</span><span class="p">;</span>
+        	<span class="nt">body</span> <span class="p">{</span>
+            	<span class="nl">background-color</span><span class="p">:</span> <span class="no">teal</span><span class="p">;</span>
+            <span class="p">}</span>
+        	<span class="nt">p</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+                <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Encode Sans Semi Condensed'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nc">.first-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nf">#first-line-id</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nf">#second-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">h1</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+                <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+                <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+                <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">div</span><span class="nc">.header</span> <span class="p">{</span>
+            	<span class="nl">background-color</span><span class="p">:</span> <span class="no">orange</span><span class="p">;</span>
+                <span class="nl">width</span><span class="p">:</span> <span class="m">500px</span><span class="p">;</span>
+                <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>
+    		<span class="nt">&lt;h1&gt;</span>CSS is fun!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"first-line"</span> <span class="na">id=</span><span class="s">"first-line-id"</span><span class="nt">&gt;</span>Very fun indeed!<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"second-line"</span><span class="nt">&gt;</span>We can use it to style our text.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://google.com"</span><span class="nt">&gt;</span>Here is a link to Google.<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>Notice how an orange box is created around the header text, with width 500 pixels and height 200 pixels. Let’s try adding margin and border and observe what happens.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+    	<span class="nt">&lt;title&gt;</span>Let's try CSS!<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;style&gt;</span>
+        	<span class="k">@import</span> <span class="sx">url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed')</span><span class="p">;</span>
+        	<span class="nt">body</span> <span class="p">{</span>
+            	<span class="nl">background-color</span><span class="p">:</span> <span class="no">teal</span><span class="p">;</span>
+            <span class="p">}</span>
+        	<span class="nt">p</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+                <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Encode Sans Semi Condensed'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nc">.first-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nf">#first-line-id</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nf">#second-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">h1</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+                <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+                <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+                <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">div</span><span class="nc">.header</span> <span class="p">{</span>
+            	<span class="nl">background-color</span><span class="p">:</span> <span class="no">orange</span><span class="p">;</span>
+                <span class="nl">width</span><span class="p">:</span> <span class="m">500px</span><span class="p">;</span>
+                <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+                <span class="nl">margin</span><span class="p">:</span> <span class="m">200px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span><span class="p">;</span>
+                <span class="nl">border-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span>
+                <span class="nl">border-color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>
+    		<span class="nt">&lt;h1&gt;</span>CSS is fun!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"first-line"</span> <span class="na">id=</span><span class="s">"first-line-id"</span><span class="nt">&gt;</span>Very fun indeed!<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"second-line"</span><span class="nt">&gt;</span>We can use it to style our text.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://google.com"</span><span class="nt">&gt;</span>Here is a link to Google.<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>We can also make our border rounded.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+    	<span class="nt">&lt;title&gt;</span>Let's try CSS!<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;style&gt;</span>
+        	<span class="k">@import</span> <span class="sx">url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed')</span><span class="p">;</span>
+        	<span class="nt">body</span> <span class="p">{</span>
+            	<span class="nl">background-color</span><span class="p">:</span> <span class="no">teal</span><span class="p">;</span>
+            <span class="p">}</span>
+        	<span class="nt">p</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+                <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Encode Sans Semi Condensed'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nc">.first-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nf">#first-line-id</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nf">#second-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">h1</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+                <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+                <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+                <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">div</span><span class="nc">.header</span> <span class="p">{</span>
+            	<span class="nl">background-color</span><span class="p">:</span> <span class="no">orange</span><span class="p">;</span>
+                <span class="nl">width</span><span class="p">:</span> <span class="m">500px</span><span class="p">;</span>
+                <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+                <span class="nl">margin</span><span class="p">:</span> <span class="m">200px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span><span class="p">;</span>
+                <span class="nl">border-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span>
+                <span class="nl">border-color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+                <span class="nl">border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>
+    		<span class="nt">&lt;h1&gt;</span>CSS is fun!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"first-line"</span> <span class="na">id=</span><span class="s">"first-line-id"</span><span class="nt">&gt;</span>Very fun indeed!<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"second-line"</span><span class="nt">&gt;</span>We can use it to style our text.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://google.com"</span><span class="nt">&gt;</span>Here is a link to Google.<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>Last but not least, let’s try adding some padding.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+    	<span class="nt">&lt;title&gt;</span>Let's try CSS!<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;style&gt;</span>
+        	<span class="k">@import</span> <span class="sx">url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed')</span><span class="p">;</span>
+        	<span class="nt">body</span> <span class="p">{</span>
+            	<span class="nl">background-color</span><span class="p">:</span> <span class="no">teal</span><span class="p">;</span>
+            <span class="p">}</span>
+        	<span class="nt">p</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+                <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Encode Sans Semi Condensed'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nc">.first-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nf">#first-line-id</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">p</span><span class="nf">#second-line</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">h1</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+                <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+            	<span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+                <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+                <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">div</span><span class="nc">.header</span> <span class="p">{</span>
+            	<span class="nl">background-color</span><span class="p">:</span> <span class="no">orange</span><span class="p">;</span>
+                <span class="nl">width</span><span class="p">:</span> <span class="m">500px</span><span class="p">;</span>
+                <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+                <span class="nl">margin</span><span class="p">:</span> <span class="m">200px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span><span class="p">;</span>
+                <span class="nl">border-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span>
+                <span class="nl">border-color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+                <span class="nl">border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+                <span class="nl">padding</span><span class="p">:</span> <span class="m">50px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>
+    		<span class="nt">&lt;h1&gt;</span>CSS is fun!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"first-line"</span> <span class="na">id=</span><span class="s">"first-line-id"</span><span class="nt">&gt;</span>Very fun indeed!<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"second-line"</span><span class="nt">&gt;</span>We can use it to style our text.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://google.com"</span><span class="nt">&gt;</span>Here is a link to Google.<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>After learning so much about HTML and CSS, next week we are going to put it into practice. We will be attempting to create a simple website to introduce yourself to the World Wide Web.</p>
+
+  </div>
+
+  
+    
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">rc4code&#39;s blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              rc4code admin
+            
+            </li>
+            
+            <li><a href="mailto:rc4code@gmail.com">rc4code@gmail.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/rc4code"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">rc4code</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Find the latest updates on rc4code here! Feel free to email us for any suggestions!</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

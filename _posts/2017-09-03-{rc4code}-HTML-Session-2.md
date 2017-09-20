@@ -11,7 +11,7 @@ CSS or Cascading Style Sheets, allow you to add style and formatting to web docu
 
 In a .html document, enter the following code snippet
 
-```
+```html
 <html>
 	<head>
     	<title>Let's try CSS!</title>
@@ -26,7 +26,7 @@ In a .html document, enter the following code snippet
 
 Currently the webpage looks quite plain, with just a simple header and some text. Let's add some color. First, we add the style tag in the header of the document. Then we add some colors to the ```<p></p>``` tag by doing the following.
 
-```
+```html
 <html>
 	<head>
     	<title>Let's try CSS!</title>
@@ -55,7 +55,7 @@ We can also change the background color and the alignment of the text using CSS.
 
 ***
 
-```
+```html
 <html>
 	<head>
     	<title>Let's try CSS!</title>
@@ -84,7 +84,7 @@ For more CSS options to play around with, you can visit the w3schools website at
 
 Honestly, Times New Roman looks pretty outdated, doesn't it? Let us change the font using CSS. First, visit the Google Fonts page at [https://fonts.google.com/](https://fonts.google.com/). Select your favourite font. Click "SELECT THIS FONT". Select the "@IMPORT" tab and copy the text as follows. The font I have chosen in this case is called "Encode Sans Semi Condensed".
 
-```
+```html
 <html>
 	<head>
     	<title>Let's try CSS!</title>
@@ -123,7 +123,7 @@ We can select a HTML element to stlye using CSS by element, class, id or positio
 
 Here's an example
 
-```
+```html
 <html>
 	<head>
     	<title>Let's try CSS!</title>
@@ -157,7 +157,7 @@ In this example, by including a ```class``` attribute for in my ```<p></p>``` el
 
 Now let's try using the ```id``` attribute and selector instead.
 
-```
+```html
 <html>
 	<head>
     	<title>Let's try CSS!</title>
@@ -194,7 +194,7 @@ The selector for the ```id``` attribute is ```#```.
 
 There is also an order of precedence when we style the elements using the selectors. The specificity increases from element, to class, to id. Here's an example.
 
-```
+```html
 <html>
 	<head>
     	<title>Let's try CSS!</title>
@@ -234,7 +234,7 @@ Note how the color of the first line changes to yellow, because the ```id``` sel
 
 There are also certain pseudo-classes for ```<a></a>``` elements. There are ```:link```, ```:visited```, ```:hover```, ```:active``` and ```:focus```. Let's try them out.
 
-```
+```html
 <html>
 	<head>
     	<title>Let's try CSS!</title>
@@ -276,7 +276,7 @@ There are also certain pseudo-classes for ```<a></a>``` elements. There are ```:
 
 Notice how the link changes color when our mouse hovers over it. We can also remove the underline and bold the text when hovered.
 
-```
+```html
 <html>
 	<head>
     	<title>Let's try CSS!</title>
@@ -324,7 +324,7 @@ The first thing that we need to understand is the CSS box model. In the CSS box 
 
 By convention, the ```<div></div>``` tag is used to position boxes in the webpage, while the ```<span></span>``` tag is used to format text. Let's try out the use of the ```<div></div>``` tag.
 
-```
+```html
 <html>
 	<head>
     	<title>Let's try CSS!</title>
@@ -375,7 +375,7 @@ By convention, the ```<div></div>``` tag is used to position boxes in the webpag
 
 Notice how an orange box is created around the header text, with width 500 pixels and height 200 pixels. Let's try adding margin and border and observe what happens.
 
-```
+```html
 <html>
 	<head>
     	<title>Let's try CSS!</title>
@@ -429,7 +429,7 @@ Notice how an orange box is created around the header text, with width 500 pixel
 
 We can also make our border rounded.
 
-```
+```html
 <html>
 	<head>
     	<title>Let's try CSS!</title>
@@ -484,7 +484,7 @@ We can also make our border rounded.
 
 Last but not least, let's try adding some padding.
 
-```
+```html
 <html>
 	<head>
     	<title>Let's try CSS!</title>

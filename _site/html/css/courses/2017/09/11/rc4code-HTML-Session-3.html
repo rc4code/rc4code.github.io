@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML/CSS Course: Session 3</title>
+  <meta name="description" content="As we have promised in the previous section, we would be making a website today!">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/html/css/courses/2017/09/11/rc4code-HTML-Session-3.html">
+  <link rel="alternate" type="application/rss+xml" title="rc4code&#39;s blog" href="/feed.xml">
+
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">rc4code&#39;s blog</a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+            <a class="page-link" href="/tags/">Tags</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/projects/">Projects</a>
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">HTML/CSS Course: Session 3</h1>
+    <p class="post-meta">
+      <time datetime="2017-09-11T21:40:00+08:00" itemprop="datePublished">
+        
+        Sep 11, 2017
+      </time>
+      
+        • 
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name">
+                Andrew Lee
+                
+              </span>
+            </span>
+            
+      
+        
+        
+        | <a href="/tags/#HTML/CSS">HTML/CSS</a>
+        
+        | <a href="/tags/#courses">courses</a>
+        </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>As we have promised in the previous section, we would be making a website today!</p>
+
+<p>However before that, let us spend some time to recap what we have learnt in the previous 2 sessions.
+First, we have covered tags, using links and images, using divs to organise sections, styling with inline CSS, changing fonts, colors, font-weights, and also styling using identifiers.</p>
+
+<p>Do look over the previous sessions’ notes if you are unsure!</p>
+
+<p>To add to the functions that you can use in the website, we would be covering two more functions, namely <strong>anchor links</strong> and creating <strong>columns</strong>, then we would implement a <strong>nav bar</strong>, which is just an application of anchor links.</p>
+
+<h3 id="anchor-links">Anchor links</h3>
+
+<p>Now, try to to make a plain website, with just a simple header ,some long text, and a footnote. To get a long text for filler text, you can visit the <a href="http://www.lipsum.com">lorem ipsum</a> website. Let’s add an anchor link. First, we add an anchor to the footnote. Then we add a link to the anchor by doing the following.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+    	<span class="nt">&lt;title&gt;</span>Anchor Links!<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    	<span class="nt">&lt;h1&gt;</span>Lorem Ipsum<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+        	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#footnote"</span><span class="nt">&gt;</span>click for footnote<span class="nt">&lt;/a&gt;</span>	<span class="c">&lt;!-- Link --&gt;</span>
+        	[long text here]
+        <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;br&gt;&lt;br&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">name=</span><span class="s">"footnote"</span><span class="nt">&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"footnote"</span><span class="nt">&gt;</span>[insert footnote]<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>Notice that clicking the footnote link would lead you to the footnote.</p>
+
+<h3 id="columns">Columns</h3>
+
+<p>Have you ever seen a website with a column of links beside the content? Or maybe multiple columns of content? In this section, we would be learning how to make columns!</p>
+
+<p>To make columns, we would be taking advantage of a new CSS attribute, <code class="highlighter-rouge">float</code>. First, we would need to construct a simple website with two divs inside a div! Give the two divs id <em>column_1</em> and <em>column_2</em> respectively. In these two divs, add long texts as filler! For the sake of brevity, we would only show the relevant snippets for the codes from this point onwards!</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"column_1"</span><span class="nt">&gt;</span>
+		[long text]
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"column_2"</span><span class="nt">&gt;</span>
+		[long text]
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<p>Look at the result of the above code before we proceed. You should see that column 1 is above column 2, and there’s nothing much to see.</p>
+
+<p>Next, we would be using <code class="highlighter-rouge">float</code> attribute to make the columns! Add the snippet below to the <code class="highlighter-rouge">&lt;style&gt;</code> section in the head!</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>#column_1 {
+      float: left ;
+      width: 50% ;
+}
+#column_2 {
+      float: left ;
+      width: 50% ;
+}
+</code></pre>
+</div>
+<p>Again, look at the result of the code now. You should have the two columns side by side! This is useful for many purposes, including what we would be showing in the next section!</p>
+
+<h3 id="nav-bars">Nav bars</h3>
+
+<p>A website is not complete without a nav-bar. Well, at least most websites out there have a nav bar, and so we would be learning how to make our very own one!</p>
+
+<p>To make a nav-bar, we would be using the anchor links we learnt earlier! Now, create a HTML document with two divs, a navbar-class div and a content-class div. Fill the content-class with 3 sections, each section with a header, an anchor, and a long text! You can name each section to your liking! Leave the nav-bar div empty, we would fill it in later!</p>
+
+<p>The first nav-bar we would make would be the top nav-bar, which is the horizontal nav-bar you see on most websites! To make this, first we would be inserting the link names of the nav bar, and link them to the anchors we have set. Include the below code in your nav-bar div!</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;span&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#[first-section-name]"</span><span class="nt">&gt;&lt;/a&gt;</span> |
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#[second-section-name]"</span><span class="nt">&gt;&lt;/a&gt;</span> |
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#[third-section-name]"</span><span class="nt">&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+</code></pre>
+</div>
+<p>The website we made should now have a nav-bar at the top, although there’s no formatting just yet.</p>
+
+<p>Now, we would proceed to make a side-bar, which is just a vertical nav-bar to the side. To make this, we would first alter the nav-bar div to the following.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;span&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#[first-section-name]"</span><span class="nt">&gt;&lt;/a&gt;</span> <span class="nt">&lt;br&gt;</span> <span class="c">&lt;!-- br is a line-break tag --&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#[second-section-name]"</span><span class="nt">&gt;&lt;/a&gt;</span> <span class="nt">&lt;br&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#[third-section-name]"</span><span class="nt">&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+</code></pre>
+</div>
+<p>Next, we would add the column styling to the nav-bar. The styling should look something like the snippet below.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>#navbar {
+      float: left ;
+      width: 20% ;
+}
+#content{
+      float: left;
+      width: 80%;
+}
+</code></pre>
+</div>
+<p>Now, we should have a sidebar in the website!</p>
+
+<hr />
+
+<h3 id="exercise">Exercise!</h3>
+
+<p>Now let’s try to make our own website! Try to apply the concepts we have learnt, to make a unique website. If you need inspiration, try to look at the websites online!</p>
+
+<hr />
+
+<p>After learning how to make a basic website, next week we are going to learn how to make a more sophisticated-looking website. We will be learning how to use bootstrap, one of the larger libraries for web.</p>
+
+  </div>
+
+  
+    
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">rc4code&#39;s blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              rc4code admin
+            
+            </li>
+            
+            <li><a href="mailto:rc4code@gmail.com">rc4code@gmail.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/rc4code"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">rc4code</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Find the latest updates on rc4code here! Feel free to email us for any suggestions!</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
