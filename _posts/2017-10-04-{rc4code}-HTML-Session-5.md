@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HTML/CSS Course: Session 5"
-authors: ["KAt Li Yang"]
+authors: ["Kat Li Yang"]
 date:   2017-10-04 17:10:00 +0800
 categories: HTML/CSS courses
 ---
@@ -56,6 +56,6 @@ Select "master branch" under "Github Pages".
 
 ![Github settings]({{ site.url }}/assets/select-master.png)
 
-Congratualtions! Your site is now accessible.
+Congratulations! Your site is now accessible.
 
 For now, work on the site on your local repository, and sync it to Github when you want to see it online.
